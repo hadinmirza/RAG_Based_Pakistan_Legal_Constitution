@@ -48,7 +48,7 @@ def LoadConstitution(PDF_Path):
                     page_content="",
                     metadata={**base_metadata, "page": page_number},
                 ))
-                continue
+                continue            
             rows = {}
             for w in words:
                 rows.setdefault(round(w["top"], 1), []).append(w)
