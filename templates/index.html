@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Constitution of Pakistan — RAG Assistant</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="app">
+  <header class="app-header">
+    <div class="header-title">
+      <span class="header-emblem">⚖️</span>
+      <div>
+        <h1>Constitution of Pakistan</h1>
+        <p>Ask questions grounded in the 1973 Constitution</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="chat-window" id="chat-window">
+    <div class="message bot">
+      <div class="bubble">
+        Assalam-o-Alaikum! Ask me anything about the Constitution of
+        Pakistan — e.g. <em>"What does Article 25 say about equality?"</em>
+      </div>
+    </div>
+  </main>
+
+  <form class="composer" id="composer">
+    <input
+      type="text"
+      id="question-input"
+      placeholder="Ask about an article, right, or process..."
+      autocomplete="off"
+      required
+    />
+    <button type="submit" id="send-btn">Send</button>
+  </form>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
