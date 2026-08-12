@@ -74,5 +74,6 @@ if __name__ == "__main__":
     sample_id = chunks[0]["metadata"]["chunk_id"]
     fetched = collection.get(ids=[sample_id], include=["documents", "metadatas"])
     print(f"\nSample fetch for id '{sample_id}':")
+    
     print(f"  metadata: {fetched['metadatas'][0]}")
     print(f"  document (first 100 chars): {fetched['documents'][0][:100]}")
