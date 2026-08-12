@@ -1,14 +1,13 @@
 from src.retrieval.retrieval import retrieve
 from src.citations.citation import answer_with_citations
 
-DISTANCE_THRESHOLD = 0.
+DISTANCE_THRESHOLD = 0.45
 
 OUT_OF_SCOPE_MESSAGE = "This question does not appear to be covered by the Constitution of Pakistan. I can only answer questions based on its content."
 
 
 def answer_safe(query, k=5):
     hits = retrieve(query, k=k)
-    print("top distance:", hits[0]["distance"] if hits else None)
 
     if not hits or hits[0]["distance"] > DISTANCE_THRESHOLD:
         return {
