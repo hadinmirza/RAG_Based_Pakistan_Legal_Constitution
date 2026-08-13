@@ -1,4 +1,4 @@
-🇵🇰 RAG-Based Pakistan Legal Constitution Assistant
+RAG-Based Pakistan Legal Constitution Assistant
 
 An end-to-end Retrieval-Augmented Generation (RAG) system designed to answer questions about the Constitution of Pakistan using the constitutional text as its knowledge source.
 
